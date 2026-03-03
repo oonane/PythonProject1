@@ -1,8 +1,8 @@
 import math
 
-leiviskat = int(input("Anna leiviskät:"))
+leiviskat = float(input("Anna leiviskät:"))
 
-naulat = int(input("Anna naulat:"))
+naulat = float(input("Anna naulat:"))
 
 luodit = float(input("Anna luodit:"))
 
