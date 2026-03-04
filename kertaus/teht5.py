@@ -1,12 +1,10 @@
 
 
 laskutoimitus = input("Kerro laskutoimitus: ")
-
+luku1 = float(input("Kerro luku: "))
+luku2 = float(input("Kerro luku: "))
 
 while True:
-
-    luku1 = float(input("Kerro luku: "))
-    luku2 = float(input("Kerro luku: "))
 
     if laskutoimitus == "yhteenlasku":
         print(luku1+luku2)
