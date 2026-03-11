@@ -1,21 +1,19 @@
 
-pienin = None
-suurin = None
+luku = input("Anna luku, tyhjä lopettaa")
 
+pienin = luku
+suurin = luku
 
-while True:
-    luku = input("Anna luku:")
+while luku != " ":
+    numero = int(luku)
 
-    if luku == '':
-        break
+    if suurin == luku or numero > suurin:
+            suurin = numero
 
-    luku = float(luku)
+    if pienin == luku or numero < pienin:
+            pienin = numero
 
-    if pienin is None or luku < pienin:
-        pienin = luku
+    luku = input("Anna luku, tyhjä lopettaa")
 
-    if suurin is None or luku > suurin:
-        suurin = luku
+print(f"Suurin luku on: {suurin} ja pienin luku on {pienin}")
 
-if pienin is not None:
-    print(f"Suurin luku on {suurin} ja pienin luku on {pienin}")
