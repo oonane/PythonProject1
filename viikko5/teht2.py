@@ -3,7 +3,11 @@
 # suuruusjärjestyksessä suurimmasta alkaen. Vihje: listan alkioiden lajittelujärjestyksen voi
 # kääntää antamalla sort-metodille argumentiksi reverse=True.
 
+luvut = []
 
-luku = input("Anna luku (tyhjä lopettaa): ")
 
-while
+while True:
+    luku = input("Anna luku (tyhjä lopettaa): ")
+
+    if luku == " ":
+        break
